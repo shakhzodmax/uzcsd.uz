@@ -10,6 +10,12 @@ module.exports = {
         flexBasis: {
             'navbar': '56px',
             'footer': '265px',
+        },
+        margin: {
+            'navTop': '56px',
+        },
+        height: {
+            'slider': '297.34px',
         }
     },
   },

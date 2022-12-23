@@ -1,12 +1,12 @@
 <script setup>
-import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
+import {Navbar, NavbarLogo, NavbarCollapse} from 'flowbite-vue'
 </script>
 
 <template>
     <Navbar class="drop-shadow-sm">
       <template #logo>
-        <NavbarLogo link="#" alt="UZCSD logo" image-url="./src/assets/img/logoCSD.svg" >
-          <h1 class="uppercase font-light text-base">
+        <NavbarLogo link="#" alt="UZCSD logo" image-url="./src/assets/img/logoCSD.svg" class="scale-75">
+          <h1 class="uppercase font-light text-lg">
             Центральный депозитарий
             <br>
             Ценных бумаг
@@ -14,7 +14,7 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
         </NavbarLogo>
       </template>
       <template #default="{isShowMenu}">
-        <NavbarCollapse :isShowMenu="isShowMenu">
+        <NavbarCollapse :isShowMenu="isShowMenu" class="font-light">
           <button @click="openMenu('about')">О нас</button>
           <button @click="openMenu('service')">Наши услуги</button>
           <button @click="openMenu('cooperate')">Корпоративное управление</button>
@@ -29,8 +29,8 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
         </svg>
       </template>
     </Navbar>
-    <div class="menu-list text-base font-light">
-      <div id="about" class="hidden p-4 bg-gray-50">
+    <div class="menu-list text-base font-light absolute z-50 w-full">
+      <div id="about" class="hidden p-4 bg-gray-200">
         <h3 class="text-center font-medium text-blue-500">Центральный депозитарий</h3>
         <hr class="w-1/6 mx-auto">
         <div class="grid py-5 px-4 mx-auto max-w-screen-2xl md:grid-cols-3">
@@ -82,7 +82,7 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
           </ul>
         </div>
       </div>
-      <div id="service" class="hidden p-4 bg-gray-50">
+      <div id="service" class="hidden p-4 bg-gray-200">
         <div class="grid py-5 px-4 mx-auto max-w-screen-2xl md:grid-cols-3">
           <ul>
             <h3 class="pb-2 font-medium text-blue-500">Список услуг</h3>
@@ -133,7 +133,7 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
           </ul>
         </div>
       </div>
-      <div id="cooperate" class="hidden p-4 bg-gray-50">
+      <div id="cooperate" class="hidden p-4 bg-gray-200">
         <div class="grid py-5 px-4 mx-auto max-w-screen-2xl md:grid-cols-5">
           <ul>
             <h3 class="pb-2 font-medium text-blue-500">Раскрытие информации</h3>
@@ -237,7 +237,7 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
           </ul>
         </div>
       </div>
-      <div id="press" class="hidden p-4 bg-gray-50">
+      <div id="press" class="hidden p-4 bg-gray-200">
         <div class="grid py-5 px-4 mx-auto max-w-screen-2xl md:grid-cols-4">
           <ul>
             <h3 class="pb-2 font-medium text-blue-500">Пресс материалы</h3>
@@ -312,7 +312,7 @@ import {Navbar, NavbarLogo, NavbarCollapse, NavbarLink} from 'flowbite-vue'
           </ul>
         </div>
       </div>
-      <div id="interactive" class="hidden p-4 bg-gray-50">
+      <div id="interactive" class="hidden p-4 bg-gray-200">
         <div class="grid py-5 px-4 mx-auto max-w-screen-2xl md:grid-cols-4">
           <ul>
             <h3 class="pb-2 font-medium text-blue-500">Открытые данные</h3>
